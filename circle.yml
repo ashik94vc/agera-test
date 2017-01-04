@@ -2,7 +2,7 @@ dependencies:
   pre:
     # Download licenses
     - curl -O https://transfer.sh/Ly904/licenses.zip
-    - tar -xzf licenses.zip | cp licenses $ANDROID_HOME/licenses
+    - unzip licenses.zip | cp licenses $ANDROID_HOME/licenses
     # Android SDK Platform 25
     - if [ ! -d "/usr/local/android-sdk-linux/platforms/android-25" ]; then echo y | android update sdk --no-ui --all --filter "android-25"; fi
     # Android SDK Build-tools, revision 25.0.2
