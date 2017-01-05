@@ -21,4 +21,4 @@ dependencies:
 test:
   override:
     - ./gradlew assembleRelease
-    - cp -R agera-test/app/build/outputs $CIRCLE_ARTIFACTS
+    - cp -R app/build/outputs $CIRCLE_ARTIFACTS
