@@ -12,7 +12,7 @@ dependencies:
 
   override:
     - ./gradlew dependencies || true
-    
+
   cache_directories:
     - /usr/local/android-sdk-linux/platforms/android-25
     - /usr/local/android-sdk-linux/build-tools/25.0.0
@@ -21,4 +21,4 @@ dependencies:
 test:
   override:
     - ./gradlew assembleRelease
-    - cp -r agera-test/build/outputs $CIRCLE_ARTIFACTS
+    - cp -R agera-test/app/build/outputs $CIRCLE_ARTIFACTS
